@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <main>
+        <h1>Formularios</h1>
+        <section> 
+            <!--
+                Etiqueta para crear formularios = form
+            -->
+
+            <!--DOS TIPOS DE METODOS: 1.Método get 2. Método post (para lenguajes con php)-->
+<!--Get:No es visible, la informacion se pasa de manera interna. Post: Es visibel a atraves, muestra la informacion en la barra de direcciones. No tiene limite -->
+
+<!--ACTION: hacia donde se envia la informacion-->
+
+
+           <form action="" method="get">
+            <label for="nombre">Nombre:</label> <!--For y Id tienen que ser iguales-->
+            <input 
+            type="text" 
+            id="nombre" 
+            name="nombre" 
+            value="" 
+            placeholder="juanito" 
+            minlength="3" 
+            maxlength="25" 
+            required 
+            title="Se admiten solo letras, mínimo 3, máximo 25" 
+            autofocus
+            spellcheck="true"
+            autocomplete="off"
+            tabindex="1"> 
+            <br>
+
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" id="edad" min="18" max="90" required tabindex="2">
+
+            <br>
+
+            <label for="contraseña">contraseña</label>
+            <input type="password" name="contraseña" id="contraseña" required>
+            <hr>
+
+            <label for="fecha">Fecha</label>
+            <input type="date" name="fecha" id="fecha">
+            <br>
+
+            <label for="color">Seleccione un color</label>
+            <input type="color" name="color" id="color"><br>
+
+            <!--Enlazado con datalist-->
+
+            <!--Lista de opciones-->
+
+            <datalist id="meses">
+                <option value="enero"></option>
+                <option value="octubre"></option>
+                <option value="diciembre"></option>
+            </datalist>
+
+            <label for="mes">Meses:</label>
+            <input type="month" name="mes" id="mes" list="meses">
+            
+            <!--fin del datalist-->
+
+            <!--radiobutton: Varias opcion, una sola seleccion-->
+            <!--checkbox: Seleccionar mas de una opcion-->
+
+            <!--Agrupar-->
+
+            <fieldset>
+                <legend>Estado civil</legend>
+                <input type="radio" name="estado" id="estado" value="soltero"> Soltero (a)
+                <input type="radio" name="estado" id="estado" value="casado"> Casado (a)
+                <input type="radio" name="estado" id="estado" value="viudo"> Viudo (a)
+            </fieldset>
+            <br>
+
+            <label for="condiciones">Acepta términos y condiciones</label>
+            <input type="checkbox" name="contrato" id="contrato">
+            <br>
+
+            <hr>
+            <label for="lenguajes">Lenguajes de programación</label>
+            <select name="lenguajes" id="lenguajes">
+                <optgroup label="Backend">
+                    <option value="java">Java</option>
+                    <option value="php">Php</option>
+                    <option value="python">Python</option>
+
+                </optgroup>
+
+                <optgroup label="Frontend">
+                    <option value="js">JavaScript</option>
+                    <option value="ps">PyScript</option>
+                </optgroup>
+                
+            </select>
+            <br>
+                <!--Botones-->
+
+                <input type="button" value="Enviar">
+                <input type="submit" value="Enviando">
+                <button type="submit" >Guardar</button>
+                <button type="reset">Borrar</button>
+
+            </form>
+
+        </section>
+    </main>
+    
+</body>
+</html>

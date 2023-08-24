@@ -1,0 +1,75 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*Acomoda el tamaño de la caja segun su tamaño*/
+
+}
+
+/*Tiene mas relevancia el documento que las referencia dentro de la etiqueta en el index*/
+
+/*
+Selectores principales:
+1.Por etiqueta <h1></h1> <main></main>
+*/
+
+
+h1{
+    background-color: rgb(122, 122, 214);
+    text-align: center;
+    color: black;
+    margin: 0;
+    padding: 2%;
+}
+h2{
+    text-align: center;
+    font-size: 32px;
+ }
+
+main{
+    width: 100%;
+    height: auto;
+    margin: auto;
+    background-color: rgb(255, 255, 66);
+    padding-bottom: 3%;
+}
+
+/*
+Por ID
+*/
+#seccion1{
+    width: 90%;
+    height: auto;
+    margin: auto;
+    padding: 5px;
+    font-size: 18px;
+    background-color: aquamarine;
+    color: rgb(0, 73, 73);
+    text-align: center;
+}
+
+
+ /*
+ Seleccion por class
+ */
+ 
+ .seccion2{
+    width: 50%;
+    height: auto;
+    margin: auto;
+    background-color: rgb(51, 190, 144);
+    margin-bottom: 2px;
+    padding: 5%;
+ }
+
+ /* 
+ Por agrupación
+ */
+
+.div1,.div2,.div3{
+    background-color: thistle;
+    width: 33%;
+    border: 1px solid black;
+    padding: 2%;
+    display: inline-block;
+}
